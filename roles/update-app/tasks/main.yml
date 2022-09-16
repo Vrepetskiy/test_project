@@ -1,0 +1,17 @@
+---
+# tasks file for update-app
+
+- name: Update application prod.
+  import_tasks: production.yml
+  when: repo_branch == "production"
+
+- name: Update application preprod.
+  import_tasks: preproduction.yml
+  when: repo_branch == "pre-production"
+
+- name: Change file ownership, group and permissions
+  file:
+      path: "/var/www/{{ app_name }}"
+      owner: "{{ ansible_user }}"
+      group: www-data
+      recurse: yes
