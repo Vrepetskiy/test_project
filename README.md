@@ -1,4 +1,4 @@
-Due to the fact that Ansible project have grate and growing community almost any task can solved using predefined and adopted playbooks and roles created and provided by this community public access.
+Due to the fact that Ansible project have great and growing community almost any task can solved using predefined and adopted playbooks and roles created and provided by this community public access.
 The following example is one of many possible ways to solve such task.
 Please note that orgin of this playbook can be found on github by the following link:
 https://github.com/mdiflorio/ansible-python-ngnix-postgres
